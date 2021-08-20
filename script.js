@@ -42,7 +42,7 @@ function discountCode(){
     const lastPrice = lastTotal.innerText;
   
     if(promoCode.value == "stevekaku" ){
-        const discountPrice = parseInt(lastPrice)
+        const discountPrice = parseFloat(lastPrice)
         const discount = discountPrice*20/100;
         const lastAmount = discountPrice - discount;
         lastTotal.innerText = lastAmount;
